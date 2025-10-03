@@ -21,6 +21,10 @@ export default function ResumeForm(props){
             </fieldset>
 
             <fieldset>
+                <legend>Skills</legend>
+            </fieldset>
+
+            <fieldset>
                 <legend>Work Experience</legend>
                 <input type="text" name="" id="" />
             </fieldset>

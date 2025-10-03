@@ -9,8 +9,50 @@
   padding: 16px;
 }
 
-#resume-container #resume-name{
-  color: black;
-  
-  font-size: 2rem;
+.initial-info-container{
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
+
+#resume-name{
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 0.1rem;
+}
+
+#resume-container > *{
+  margin-bottom: 1rem;
+}
+
+li + li{
+  margin-top: 0.1rem;
+}
+
+.section-title{
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.work-experience + .work-experience,
+.education + .education{
+  margin-top: 0.75rem;
+}
+
+.work-experience > *,
+.education > *{
+  margin-top: 0.2rem;
+}
+
+.work-experience > h1,
+.education > h1{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.work-experience > h2,
+.education > h2{
+  font-style: italic;
+}
+

@@ -17,6 +17,7 @@ table { border-collapse: collapse; border-spacing: 0;}
   align-items: center;
   min-height: 100vh;
   background-color: slategray;
+  max-width: 100%;
 
   --header-color: rgb(26, 26, 26);
 }
