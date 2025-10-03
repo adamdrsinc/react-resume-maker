@@ -1,0 +1,48 @@
+form, 
+#resume-container{
+  flex: 1;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+form{
+  margin-left: 16px;
+  margin-right: 8px;
+}
+
+label{
+  display: block;
+  width: 100%;
+}
+
+label + input{
+  margin-bottom: 16px;
+}
+
+#resume-container{
+  flex: 1;
+}
+
+fieldset {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+textarea{
+  resize: vertical;
+}
+
+legend{
+  font-weight: bold;
+  font-size: 1.25rem;
+}

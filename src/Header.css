@@ -16,36 +16,32 @@ header h1{
 }
 
 header h1:hover {
-    animation: change-color 0.75s forwards; 
+    animation: change-color 2.25s infinite; 
 }
 
 @keyframes change-color{
     0%{
-        color: white;
-    }
-
-    15%{
         color: red;
     }
 
-    30%{
+    20%{
         color: orange;
     }
 
-    45%{
+    40%{
         color: yellow
     }
 
-    60%{
+    55%{
         color: green;
     }
 
-    75%{
+    70%{
         color: lightskyblue;
     }
 
-    90%{
-        color: indigo;
+    85%{
+        color: rgb(145, 24, 231);
     }
 
     100%{
