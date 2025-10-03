@@ -1,0 +1,5 @@
+footer{
+    min-height: 10vh;
+    background-color: var(--header-color);
+    width: 100vw;
+}
