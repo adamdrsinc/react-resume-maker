@@ -1,7 +1,7 @@
 import InitialInfo from "./InitialInfo";
 import "./ResumeContainer.css"
 import ResumeDescription from "./ResumeDescription";
-import Skills from "./Skills";
+import SkillList from "./SkillList";
 
 export default function ResumeContainer(props){
     const fullNameState    = props.states.fullNameState;
@@ -13,8 +13,8 @@ export default function ResumeContainer(props){
     return (
         <div id="resume-container">
             <InitialInfo states={{fullNameState, emailState, phoneNumberState}}></InitialInfo>
-            <ResumeDescription description={descriptionState.stateValue}></ResumeDescription>
-            <Skills skills={skillsState.value}></Skills>
+            <ResumeDescription descriptionState={descriptionState}></ResumeDescription>
+            <SkillList skills={skillsState.value}></SkillList>
             <div id="work-experience-container">
                 <h1 className="section-title">Work Experience</h1>
                 <div className="work-experience">

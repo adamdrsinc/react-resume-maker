@@ -1,6 +1,7 @@
 import CustomInputWithLabel from "./CustomInputWithLabel";
 import CustomTextAreaWithLabel from "./CustomTextAreaWithLabel";
 import "./ResumeForm.css"
+import SkillList from "./SkillList.jsx";
 
 export default function ResumeForm(props){
     const fullNameState    = props.states.fullNameState;
@@ -8,6 +9,8 @@ export default function ResumeForm(props){
     const phoneNumberState = props.states.phoneNumberState;
     const descriptionState = props.states.descriptionState;
     const skillsState = props.states.skillsState;
+    console.log("1");
+
 
     const handleSkillButtonClick = (e) => {
         e.preventDefault();
@@ -38,20 +41,7 @@ export default function ResumeForm(props){
 
             <fieldset>
                 <legend>Skills</legend>
-
-                <ul>
-                    {
-                        skillsState.value.map((skill, idx) => {
-                            return <li id={idx}>
-                                <input type="text" name={"skill"+idx} id={"skill-" + idx} value={skill} onChange={(e) => {
-                                    const newSkills = [...skillsState.value];
-                                    newSkills[idx] = e.target.value;
-                                    skillsState.set(newSkills);
-                                }}/>
-                                </li>
-                        })
-                    }
-                </ul>
+                <SkillList state={skillsState}/>
                 <button className="plus-button" onClick={handleSkillButtonClick}>+</button>
             </fieldset>
 
