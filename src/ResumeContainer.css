@@ -9,6 +9,12 @@
   padding: 16px;
 }
 
+@media screen and (max-width: 900px){
+  #resume-container{
+    margin-right: 8px;
+  }
+}
+
 .initial-info-container{
   text-align: center;
   margin-bottom: 0.5rem;

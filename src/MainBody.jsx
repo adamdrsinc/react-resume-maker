@@ -8,23 +8,29 @@ export default function MainBody(){
     const [email, setEmail] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [description, setDescription] = useState("");
+    const [skills, setSkills] = useState([]);
+
 
     const statesObj = {
         fullNameState : {
-            stateValue: fullName, 
-            stateSetter: setFullName
+            value: fullName, 
+            set: setFullName
         },
         emailState : {
-            stateValue: email,
-            stateSetter: setEmail
+            value: email,
+            set: setEmail
         },
         phoneNumberState : {
-            stateValue: phoneNumber,
-            stateSetter: setPhoneNumber
+            value: phoneNumber,
+            set: setPhoneNumber
         },
         descriptionState : {
-            stateValue: description,
-            stateSetter: setDescription
+            value: description,
+            set: setDescription
+        },
+        skillsState: {
+            value: skills,
+            set: setSkills
         }
     }
 

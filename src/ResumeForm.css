@@ -10,6 +10,12 @@ form{
   margin-right: 8px;
 }
 
+@media screen and (max-width: 900px){
+  form{
+    margin-left: 8px;
+  }
+}
+
 label{
   display: block;
   width: 100%;
@@ -28,6 +34,15 @@ fieldset {
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  width: 100%;
 }
 
 input, textarea{
@@ -45,4 +60,24 @@ textarea{
 legend{
   font-weight: bold;
   font-size: 1.25rem;
+}
+
+.plus-button{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  margin-top: 0.5rem;
+
+  border: 2px solid gray;
+
+  background-color: white;
+  transition: background-color 0.1s ease-in, color 0.1s ease-out;
+}
+
+.plus-button:hover{
+  background-color: gray;
+  color: white;
 }
