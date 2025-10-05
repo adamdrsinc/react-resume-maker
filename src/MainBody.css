@@ -19,9 +19,6 @@ table { border-collapse: collapse; border-spacing: 0;}
 
   width: 100%;
   max-width: 1200px;
-
-  max-height: 80vh;
-
   background-color: white;
   margin: 1vh 1vh;
 
@@ -29,7 +26,13 @@ table { border-collapse: collapse; border-spacing: 0;}
   border: 2px solid black;
 
   display: flex;
-} 
+}
+
+@media screen and (min-height: 900px) {
+  #main{
+    max-height: 80vh;
+  }  
+}
 
 @media screen and (max-width: 900px){
   #main{

@@ -1,5 +1,30 @@
 footer{
-    min-height: 10vh;
+    height: 10vh;
+    max-height: 10vh;
     background-color: var(--header-color);
     width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+}
+
+footer h1{
+    font-family: monospace, 'Courier New';
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer a{
+    cursor: pointer;
+}
+
+footer a:hover{
+    opacity: 0.8;
+}
+
+footer * {
+    max-height: 5vh;
 }
