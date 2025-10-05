@@ -1,7 +1,7 @@
 import CustomInputWithLabel from "./CustomInputWithLabel";
 import CustomTextAreaWithLabel from "./CustomTextAreaWithLabel";
 import EducationsOnForm from "./EducationsOnForm";
-import "./ResumeForm.css"
+import "../styles/ResumeForm.css"
 import SkillListForm from "./SkillListForm";
 import WorkExperiencesOnForm from "./WorkExperiencesOnForm";
 

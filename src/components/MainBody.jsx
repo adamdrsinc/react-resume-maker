@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./MainBody.css";
+import "../styles/MainBody.css";
 import ResumeContainer from "./ResumeContainer";
 import ResumeForm from "./ResumeForm";
 

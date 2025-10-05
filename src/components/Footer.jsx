@@ -1,6 +1,6 @@
-import "./Footer.css";
-import gitHubPng from "./assets/github.png";
-import linkedInPng from "./assets/linked-in.png";
+import "../styles/Footer.css";
+import gitHubPng from "../assets/github.png";
+import linkedInPng from "../assets/linked-in.png";
 
 export default function Footer(){
     return (

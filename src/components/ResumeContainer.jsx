@@ -2,7 +2,7 @@ import InitialInfo from "./InitialInfo";
 import ResumeDescription from "./ResumeDescription";
 import SkillList from "./SkillList";
 import WorkExperiences from "./WorkExperiences";
-import "./ResumeContainer.css"
+import "../styles/ResumeContainer.css"
 import Educations from "./Educations";
 
 export default function ResumeContainer(props){
