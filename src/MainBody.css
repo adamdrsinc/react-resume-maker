@@ -20,6 +20,8 @@ table { border-collapse: collapse; border-spacing: 0;}
   width: 100%;
   max-width: 1200px;
 
+  max-height: 80vh;
+
   background-color: white;
   margin: 1vh 1vh;
 

@@ -3,6 +3,10 @@ form,
   flex: 1;
   margin-top: 8px;
   margin-bottom: 8px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  word-wrap:break-word;
 }
 
 form{
