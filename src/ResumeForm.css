@@ -116,3 +116,25 @@ legend{
 .work-experience-date-container > * > input{
   margin: 0;
 }
+
+.delete-button{
+  margin-top: 4px;
+  padding: 4px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in, color 0.1s ease-out;
+  background-color: white;
+  color: black;
+
+  align-self: end;
+}
+
+.delete-button:hover{
+  background-color: lightcoral;
+  color: white;
+}
+
+li{
+  display: flex;
+  flex-direction: column;
+}

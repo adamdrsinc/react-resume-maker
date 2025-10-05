@@ -7,6 +7,13 @@ export default function WorkExperiencesOnForm({state}){
             state.value.map((workExperience, index) => {
                 return <li key={index}>
                     <NewWorkExperience index={index} workExperiencesState={state}/>
+                    <button className="delete-button" onClick={(e) => {
+                        e.preventDefault();
+
+                        const newWorkExperiences = [...state.value];
+                        newWorkExperiences.splice(index, 1);
+                        state.set(newWorkExperiences);
+                    }}>Delete</button>
                 </li>
             })
         }

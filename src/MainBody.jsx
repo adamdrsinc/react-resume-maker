@@ -10,6 +10,7 @@ export default function MainBody(){
     const [description, setDescription] = useState("");
     const [skills, setSkills] = useState([]);
     const [workExperiences, setWorkExperiences] = useState([]);
+    const [educations, setEducations] = useState([]);
 
 
     const statesObj = {
@@ -36,6 +37,10 @@ export default function MainBody(){
         workExperiencesState: {
             value: workExperiences,
             set: setWorkExperiences
+        },
+        educationsState: {
+            value: educations,
+            set: setEducations
         }
     }
 
