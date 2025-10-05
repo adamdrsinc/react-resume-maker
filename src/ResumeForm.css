@@ -37,8 +37,10 @@ fieldset {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+
+button{
+  align-self: center;
 }
 
 ul{
@@ -80,4 +82,37 @@ legend{
 .plus-button:hover{
   background-color: gray;
   color: white;
+}
+
+.new-work-experience{
+  background-color: lightgray;
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 12px;;
+}
+
+.fieldset-work-experiences li + li{
+  margin-top: 12px;
+}
+
+.work-experience-date-container{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.work-experience-date-container > *{
+  display: flex;
+  flex: 1;
+  gap: 4px;
+  align-items: center;
+}
+
+.work-experience-date-container > * > label{
+  width: auto;
+}
+
+.work-experience-date-container > * > input{
+  margin: 0;
 }

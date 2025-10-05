@@ -1,6 +1,4 @@
 export default function SkillList({state}){
-    console.log(2);
-    
     if(!state){
         return(
             <p>skillsState is not defined.</p>
@@ -9,17 +7,10 @@ export default function SkillList({state}){
 
     return (
         <ul>
-            {
-                state.value.map((skill, idx) => {
-                    return <li key={idx}>
-                        <input type="text" name={"skill"+idx} id={"skill-" + idx} value={skill} onChange={(e) => {
-                            const newSkills = [...state.value];
-                            newSkills[idx] = e.target.value;
-                            state.set(newSkills);
-                        }}/>
-                        </li>
-                })
-            }
+            {state.value.length > 0 && <h1 className="section-title">Skills</h1>}
+            {state.value.map((skill, idx) => {
+                return skill !== "" && <li key={idx}>- {skill}</li>
+            })}
         </ul>
     );
 }
